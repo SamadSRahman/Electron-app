@@ -5,9 +5,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Hyundai Sans Head Office', sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.MuiSlider-track, .css-xvk2i-MuiSlider-track{
+  background-color: red;
+  }
+  
+.css-1xcmt9q-MuiSlider-thumb{
+      background-color: green;
+  }

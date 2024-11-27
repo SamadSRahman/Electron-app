@@ -1,0 +1,9 @@
+.container{
+    background-color: #191919;
+    color: #fff;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+}
+body::-webkit-scrollbar{
+    display: none !important;
+}

@@ -1,8 +1,19 @@
 {
-  "name": "mark-10",
+  "name": "hyundai-app",
+  "productName": "HyundaiApp",
   "version": "0.1.0",
+  "description": "Hyundai Desktop Application",
+  "author": {
+    "name": "Samad Rahman",
+    "email": "rahman@apprikart.com"
+  },
   "private": true,
+  "main": "public/electron.js",
+  "homepage": "./",
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.1.6",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -15,7 +26,28 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "electron-dev": "concurrently \"cross-env BROWSER=none npm start\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-pack": "npm run build && electron-builder --win portable -c.win.signAndEditExecutable=false"
+  },
+  "build": {
+    "appId": "com.hyundai.app",
+    "productName": "Hyundai App",
+    "files": [
+      "build/**/*",
+      "public/electron.js",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "assets",
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        "portable"
+      ]
+    },
+    "asar": true
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +66,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "cross-env": "^7.0.3",
+    "electron": "^33.0.2",
+    "electron-builder": "^25.1.8",
+    "wait-on": "^8.0.1"
   }
 }

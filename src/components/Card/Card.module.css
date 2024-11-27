@@ -1,0 +1,16 @@
+.container{
+    width: 40vw;
+
+    /* height: 6rem; */
+    background-color: #E4DCD3;
+    padding: 20px;
+}
+.textSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.valueSection{
+    background-color: white;
+    padding: 5px 8px;
+}

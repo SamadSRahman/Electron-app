@@ -1,0 +1,78 @@
+.container{
+    background-color: white;
+    width: 90vw;
+    margin: auto;
+    color: #000;
+    padding: 20px;
+    
+}
+.head{
+    margin-bottom: 20px;
+}
+.head > h2{
+    font-weight: bolder;
+    margin: 0px;
+    padding: 20px;
+    border-bottom: 0.5px solid #CCC;
+}
+.vehicleSection{
+        display: flex;
+        box-sizing: border-box;
+        border-top:  0.5px solid #CCC;
+        margin-top: 20px;
+        padding: 20px;
+        gap: 20px;
+}
+.cvSection, .evSection{
+    width: 50%;
+    text-align: left;
+}
+.cvSection > h2, .evSection > h2{
+    margin: 0px;
+}
+.selectSection{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.radioSection{
+   
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.radioSection >label{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+
+}
+.radioSection input{
+    margin: 0px;
+    cursor: pointer;
+    
+}
+.cardSection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.btnSection{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 10px;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+    /* margin-bottom: 20px; */
+}
+.btnSection > button{
+    padding: 10px 12px;
+    width: 6rem;
+    border: none;
+    color: white;
+    background-color: #002C5F;
+    font-weight: 600;
+    cursor: pointer;
+}
